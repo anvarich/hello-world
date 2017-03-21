@@ -13,6 +13,10 @@ world:
     build: world/
     links:
       - consul:consul
+goodbye:    
+    build: goodbye/
+    links:
+      - consul:consul
 consul:
     image: consul:latest
     restart: always
